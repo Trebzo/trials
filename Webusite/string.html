@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Layout 02</title>
+    <link rel="stylesheet" type="text/css" href="string.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main-header">
+            <div id="logo">
+                <img src="Logo.png" width="120px" height="120px" alt="Logo">
+            </div>
+            <div id="navigation" class="d-none d-md-flex">
+                <a href="index.html">Home</a>
+                <a href="gear.html">Gear</a>
+                <a href="brands.html">Brands</a>
+                <a href="recommended.html">Recommended</a>
+                <a href="aboutus.html">About us</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse" id="sidebar">
+            <div id="sidebar-div">
+                <h3>Navigation</h3>
+                <a href="index.html">Home</a><br>
+                <a href="brands.html">Brands</a><br>
+                <a href="recommended.html">Recommended</a><br>
+                <a href="aboutus.html">About Us</a><br>
+            </div>
+        </div>
+
+        <div id="main-text"><h2>Strings</h2></div>
+
+        <div id="main-content">
+            <div id="image-gallery">
+                <div class="image-box">
+                    <img src="st1.jpg" alt="Fender Yngwie Malmsteen Signature Electric Guitar Strings">
+                    <div class="price-tag">PHP 765.00</div>
+                    <h5>Fender Yngwie Malmsteen Signature Electric Guitar Strings</h5>
+                </div>
+                <div class="image-box">
+                    <img src="st2.jpg" alt="D'Addario A310 Ascenté Violin String Set - 4/4 Scale - Medium Tension">
+                    <div class="price-tag">PHP 1,350.00</div>
+                    <h5>D'Addario A310 Ascenté Violin String Set - 4/4 Scale - Medium Tension</h5>
+                </div>
+                <div class="image-box">
+                    <img src="st3.jpg" alt="D'Addario EJ26 Phosphor Bronze Acoustic Guitar Strings">
+                    <div class="price-tag">PHP 540.00</div>
+                    <h5>D'Addario EJ26 Phosphor Bronze Acoustic Guitar Strings</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination justify-content-center">
+            <a href="strap.html">Previous</a>
+            <a href="guitar.html">1</a>
+            <a  href="gear.html">2</a>
+            <a  href="strap.html">3</a>
+            <a class="active" href="string.html">4</a>
+        </div>
+
+        <div id="whats-new" style="margin-top: 30px;">
+            <h2 class="text-center">Also Visit</h2>
+            <div class="d-flex justify-content-around flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.apronus.com/music/onlineguitar.htm">
+                    <img src="image4.jpg" class="card-img-top" alt="Image 1">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Tune Tester</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fender.com/pages/how-to-play-guitar">
+                    <img src="image5.jpg" class="card-img-top" alt="Image 2">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Learn to play the Guitar Learn the basics</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.musictoyourhome.com/blog/10-tips-for-guitar-every-beginner-should-know/">
+                    <img src="image6.jpg" class="card-img-top" alt="Image 3">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Guitar Tips for Beginners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="Logo.png" width="120px" height="120px" alt="Logo">
+            <p>&copy; 2023 TREBZO. All Rights Reserved.</p><br>
+            <p>sionbert0503@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

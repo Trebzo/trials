@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    background-image: url(bg6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 2%;
+    height: 120px;
+}
+
+#sidebar-div {
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar-div a {
+    color: black;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#sidebar-div a:hover {
+    color: red;
+}
+
+#logo {
+    height: 100%;
+    min-height: 100px;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-align: right;
+    font-size: 15px;
+}
+
+#navigation a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+#navigation a:hover {
+    color: red;
+}
+
+#navigation a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+#navigation a:hover::after {
+    width: 100%;
+}
+
+#navigation .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+    color: white;
+    padding: auto;
+}
+
+.navbar-toggler-icon::before {
+    content: "\2630";
+    font-size: 1.5rem;
+    color: white;
+}
+
+#main-text h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+#main-text {
+    padding-bottom: 20px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 30px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.image-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.image-box img {
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-content section {
+    margin-bottom: 20px;
+}
+
+.text-content h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+    text-align: justify;
+}
+
+#footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 20px;
+}
+
+#footer img {
+    width: 150px;
+    height: 130px;
+    object-fit: fill;
+    float: left;
+    padding-left: 10px;
+}
+
+#footer p {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.collapse.show {
+    display: flex;
+    width: 100%;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+#whats-new {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 767.98px) {
+    #navigation {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .image-box {
+        flex: 1 0 calc(33.33% - 15px);
+    }
+}
+
+#footer p {
+    padding-top: 20px;
+}
+
+#sidebar-div h3 {
+    color: red;
+    font-weight: bold;
+}
+
+#sidebar-div a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-text h2 {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#whats-new h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display:flexbox;
+}
+img:hover{
+    transform: translateY(-5px);
+}

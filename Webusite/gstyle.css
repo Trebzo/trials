@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 2%;
+    height: 120px;
+}
+
+#sidebar-div {
+    width: 200px;
+    height: 100vh; /* Full viewport height */
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar-div a {
+    color: black;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#sidebar-div a:hover {
+    color: red;
+}
+
+#logo {
+    height: 100%;
+    min-height: 100px;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-align: right;
+    font-size: 15px;
+}
+
+#navigation a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px; /* Adjusted margin-left */
+    padding-right: 15px; /* Added padding-right for spacing */
+    position: relative; /* Ensure pseudo-elements are positioned relative to the link */
+}
+
+#navigation a:hover {
+    color: red;
+}
+
+/* Enhanced navigation link styling */
+#navigation a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+#navigation a:hover::after {
+    width: 100%;
+}
+
+#navigation .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    margin-left: 20px; /* Adjusted margin */
+    color: white;
+    padding: auto;
+}
+
+.navbar-toggler-icon::before {
+    content: "\2630"; /* Unicode character for burger icon */
+    font-size: 1.5rem;
+    color: white;
+}
+
+#main-text h2 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#main-text {
+    padding-bottom: 20px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+#image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Increased gap for better spacing */
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.image-box {
+    flex: 1 0 calc(20% - 15px); /* Adjusted for new gap */
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+}
+
+.image-box:hover {
+    transform: scale(1.05); /* Slightly increased scale for hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    transition: opacity 0.4s ease; /* Enhanced transition effect */
+}
+
+.image-box:hover img {
+    opacity: 0.3; /* Fade out image on hover */
+}
+
+.price-tag {
+    background-color: #222; /* Darker background for better visibility */
+    color: white; /* Gold color for the price */
+    padding: 15px 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1.4rem; /* Slightly larger font size */
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow for price tag */
+}
+
+.image-box:hover .price-tag {
+    opacity: 1; /* Show price tag on hover */
+    transform: translateX(-50%) translateY(-10px); /* Slightly move up on hover */
+}
+
+#footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+    line-height: 20px;
+}
+
+#footer img {
+    width: 150px;
+    height: 130px;
+    object-fit: fill;
+    float: left;
+    padding-left: 10px;
+}
+
+#footer p {
+    padding-top: 10px; /* Adjusted padding */
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+/* Additional styles for collapse */
+.collapse.show {
+    display: flex;
+    width: 100%;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+#whats-new {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+#whats-new .card {
+    margin: 15px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease; /* Added transform for card hover effect */
+}
+
+#whats-new .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#whats-new .card-text {
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slightly lift card on hover */
+}
+
+/* Media queries */
+@media (max-width: 767.98px) {
+    #navigation {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .image-box {
+        flex: 1 0 calc(33.33% - 15px); /* Adjust to fit 3 items per row on medium screens */
+    }
+}
+
+#footer p {
+    padding-top: 20px; /* Increased padding for footer text */
+}
+
+#sidebar-div h3{
+    color: red;
+    font-weight: bold;
+}
+
+#sidebar-div a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-text h2{
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#whats-new h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+    color: black;
+  }

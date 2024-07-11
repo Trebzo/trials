@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Layout 02</title>
+    <link rel="stylesheet" type="text/css" href="guitar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main-header">
+            <div id="logo">
+                <img src="Logo.png" width="120px" height="120px" alt="Logo">
+            </div>
+            <div id="navigation" class="d-none d-md-flex">
+                <a href="index.html">Home</a>
+                <a href="guitar.html">Gear</a>
+                <a href="brands.html">Brands</a>
+                <a href="recommended.html">Recommended</a>
+                <a href="aboutus.html">About us</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse" id="sidebar">
+            <div id="sidebar-div">
+                <h3>Home</h3><br>
+                <a href="guitar.html">Gear</a><br>
+                <a href="brands.html">Brands</a><br>
+                <a href="recommended.html">Recommended</a><br>
+                <a href="aboutus.html">About Us</a><br>
+            </div>
+        </div>
+
+        <div id="main-text"><h2>Guitars</h2></div>
+
+        <div id="main-content">
+            <div id="image-gallery">
+                <div class="image-box">
+                    <img src="a.jpg" alt="Blueridge BR-160E">
+                    <div class="price-tag">PHP 62,910.00</div>
+                    <h5>Blueridge BR-160E</h5>
+                </div>
+                <div class="image-box">
+                    <img src="b.jpg" alt="Fender Player Jazz Bass">
+                    <div class="price-tag">PHP 45,000.00</div>
+                    <h5>Fender Player Jazz Bass</h5>
+                </div>
+                <div class="image-box">
+                    <img src="c.jpg" alt="Fender America">
+                    <div class="price-tag">PHP 55,000.00</div>
+                    <h5>Fender America</h5>
+                </div>
+                <div class="image-box">
+                    <img src="d.jpg" alt="Fender Kurt Cobain">
+                    <div class="price-tag">PHP 75,000.00</div>
+                    <h5>Fender Kurt Cobain</h5>
+                </div>
+                <div class="image-box">
+                    <img src="e.jpg" alt="Fender 60s Pau Ferro">
+                    <div class="price-tag">PHP 48,000.00</div>
+                    <h5>Fender 60s Pau Ferro</h5>
+                </div>
+                <div class="image-box">
+                    <img src="f.jpg" alt="Fender Telecaster Maple">
+                    <div class="price-tag">PHP 50,000.00</div>
+                    <h5>Fender Telecaster Maple</h5>
+                </div>
+                <div class="image-box">
+                    <img src="g.jpg" alt="Fender Jaguar">
+                    <div class="price-tag">PHP 60,000.00</div>
+                    <h5>Fender Jaguar</h5>
+                </div>
+                <div class="image-box">
+                    <img src="h.jpg" alt="Fender Jazz Master">
+                    <div class="price-tag">PHP 65,000.00</div>
+                    <h5>Fender Jazz Master</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination justify-content-center">
+            <a class="active" href="guitar.html">1</a>
+            <a href="gear.html">2</a>
+            <a href="strap.html">3</a>
+            <a href="string.html">4</a>
+            <a href="gear.html">Next</a>
+        </div>
+
+        <div id="whats-new" style="margin-top: 30px;">
+            <h2 class="text-center">Also Visit</h2>
+            <div class="d-flex justify-content-around flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fender.com/articles/instruments/acoustic-vs-electric-guitar">
+                    <img src="image3.jpg" class="card-img-top" alt="Image 1">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Acoustic Vs Electric Guitars for Beginners</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fbt.it/news/-/asset_publisher/MVnUHtzsVK2I/content/id/177601?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I_redirect=https%3A%2F%2Fwww.fbt.it%2Fnews%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I_assetEntryId%3D177601">
+                    <img src="image1.jpg" class="card-img-top" alt="Image 2">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">NEW BRANCH! JB Music & Sports Pasay Road Showroom</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fender.com/articles/techniques/how-to-guitar-solo">
+                    <img src="image2.jpg" class="card-img-top" alt="Image 3">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">5 Tips For Playing Memorable Solos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="Logo.png" width="120px" height="120px" alt="Logo">
+            <p>&copy; 2023 TREBZO. All Rights Reserved.</p><br>
+            <p>sionbert0503@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

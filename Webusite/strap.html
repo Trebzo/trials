@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Layout 02</title>
+    <link rel="stylesheet" type="text/css" href="strapstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main-header">
+            <div id="logo">
+                <img src="Logo.png" width="120px" height="120px" alt="Logo">
+            </div>
+            <div id="navigation" class="d-none d-md-flex">
+                <a href="index.html">Home</a>
+                <a href="gear.html">Gear</a>
+                <a href="brands.html">Brands</a>
+                <a href="recommended.html">Recommended</a>
+                <a href="aboutus.html">About us</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse" id="sidebar">
+            <div id="sidebar-div">
+                <h3>Navigation</h3>
+                <a href="index.html">Home</a><br>
+                <a href="brands.html">Brands</a><br>
+                <a href="recommended.html">Recommended</a><br>
+                <a href="aboutus.html">About Us</a><br>
+            </div>
+        </div>
+
+        <div id="main-text"><h2>Straps</h2></div>
+
+        <div id="main-content">
+            <div id="image-gallery">
+                <div class="image-box">
+                    <img src="s1.jpg" alt="D’Addario Planet Waves 50BAL01 Auto Lock Bass Guitar Strap (Black Padded Stripes)">
+                    <div class="price-tag">PHP 1,232.50</div>
+                    <h5>D’Addario Planet Waves 50BAL01 Auto Lock Bass Guitar Strap (Black Padded Stripes)</h5>
+                </div>
+                <div class="image-box">
+                    <img src="s2.jpg" alt="D'Addario Planet Waves 25LB03 Beatles Help Guitar Strap">
+                    <div class="price-tag">PHP 2,200.00</div>
+                    <h5>D'Addario Planet Waves 25LB03 Beatles Help Guitar Strap</h5>
+                </div>
+                <div class="image-box">
+                    <img src="s3.jpg" alt="D'Addario Planet Waves 25LB07 Beatles Abbey Road 2.5 inch Guitar Strap">
+                    <div class="price-tag">PHP 2,200.00</div>
+                    <h5>D'Addario Planet Waves 25LB07 Beatles Abbey Road 2.5 inch Guitar Strap</h5>
+                </div>
+                <div class="image-box">
+                    <img src="s4.jpg" alt="D'Addario 50RB02 Eco Comfort Guitar Straps - Grey">
+                    <div class="price-tag">PHP 1,170.00</div>
+                    <h5>D'Addario 50RB02 Eco Comfort Guitar Straps - Grey</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination justify-content-center">
+            <a href="gear.html">Previous</a>
+            <a href="guitar.html">1</a>
+            <a  href="gear.html">2</a>
+            <a class="active" href="strap.html">3</a>
+            <a href="string.html">4</a>
+            <a href="string.html">Next</a>
+        </div>
+
+        <div id="whats-new" style="margin-top: 30px;">
+            <h2 class="text-center">Also Visit</h2>
+            <div class="d-flex justify-content-around flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fender.com/articles/instruments/acoustic-vs-electric-guitar">
+                    <img src="image3.jpg" class="card-img-top" alt="Image 1">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Acoustic Vs Electric Guitars for Beginners</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fbt.it/news/-/asset_publisher/MVnUHtzsVK2I/content/id/177601?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I_redirect=https%3A%2F%2Fwww.fbt.it%2Fnews%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MVnUHtzsVK2I_assetEntryId%3D177601">
+                    <img src="image1.jpg" class="card-img-top" alt="Image 2">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">NEW BRANCH! JB Music & Sports Pasay Road Showroom</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.fender.com/articles/artist/5-tips-for-playing-memorable-solos">
+                    <img src="image2.jpg" class="card-img-top" alt="Image 3">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">5 Tips For Playing Memorable Solos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="Logo.png" width="120px" height="120px" alt="Logo">
+            <p>&copy; 2023 TREBZO. All Rights Reserved.</p><br>
+            <p>sionbert0503@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
